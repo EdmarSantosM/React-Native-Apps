@@ -7,8 +7,8 @@ const App = () => {
     return (
         <>
           <View style={style.page}>
-                <View>
-                    <Image source={dima} />
+                <View style={style.container_cabecalho}>
+                    <Image source={dima} style={style.dima} />
                 </View>
           </View>
         </>
@@ -21,10 +21,15 @@ const style = StyleSheet.create({
         backgroundColor: '#E7E7E7',
         flex: 1
     },
+    container_cabecalho:{
+        flex: 1,
+        alignItems: 'center',
+        justifyContent: 'center'
+    },
     dima: {
-        width: 250,
-        height: 250,
-        borderRadius: 125
+        width: 150,
+        height: 150,
+        borderRadius:150
     }
 
 
