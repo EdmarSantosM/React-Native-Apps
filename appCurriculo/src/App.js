@@ -20,7 +20,14 @@ const style = StyleSheet.create({
     page: {
         backgroundColor: '#E7E7E7',
         flex: 1
+    },
+    dima: {
+        width: 250,
+        height: 250,
+        borderRadius: 125
     }
+
+
 })
 
 export default App;
