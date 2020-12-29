@@ -1,11 +1,15 @@
 import React from 'react';
-import {StyleSheet, View} from 'react-native';
+import {StyleSheet, View, Image } from 'react-native';
+
+import dima from './assets/dima.jpg';
 
 const App = () => {
     return (
         <>
           <View style={style.page}>
-
+                <View>
+                    <Image source={dima} />
+                </View>
           </View>
         </>
     );
