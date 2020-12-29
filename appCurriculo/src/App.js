@@ -1,5 +1,5 @@
 import React from 'react';
-import {StyleSheet, View, Image } from 'react-native';
+import {StyleSheet, View, Image, Text } from 'react-native';
 
 import dima from './assets/dima.jpg';
 
@@ -9,6 +9,8 @@ const App = () => {
           <View style={style.page}>
                 <View style={style.container_cabecalho}>
                     <Image source={dima} style={style.dima} />
+                    <Text>Edmar Santos</Text>
+                    <Text>Desenvolvedor Júnior</Text>
                 </View>
           </View>
         </>
@@ -21,7 +23,7 @@ const style = StyleSheet.create({
         backgroundColor: '#E7E7E7',
         flex: 1
     },
-    container_cabecalho:{
+    container_cabecalho: {
         flex: 1,
         alignItems: 'center',
         justifyContent: 'center'
