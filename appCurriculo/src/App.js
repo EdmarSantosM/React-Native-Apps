@@ -5,6 +5,8 @@ import { StyleSheet, View, Text, Image} from 'react-native';
 import{NavigationContainer} from '@react-navigation/native';
 import {createStackNavigator} from '@react-navigation/stack';
 
+import Icon from 'react-native-vector-icons/Feather'
+
 import Home from './pages/Home';
 import Resumo from './pages/Resumo';
 import Sobre from './pages/Sobre';
@@ -30,7 +32,7 @@ export default function App(){
                 <Stack.Navigator initialRouteName="Home">
                         <Stack.Screen name="Home" component={Home}
                             options={{
-                                title: '    Bem-vindo ao  meu AppCurriculo',
+                                title: '    Bem-vindo ao meu AppCurriculo',
                                 headerStyle:{
                                     backgroundColor: '#121212',
                                 },
@@ -41,6 +43,10 @@ export default function App(){
                         <Stack.Screen name="Contato" component={Contato} />
                 </Stack.Navigator>
                 </NavigationContainer>
+
+                    <View>
+                        <Icon name="github" />
+                    </View>
 
         </>
     );
