@@ -21,6 +21,8 @@ export default function App(){
                     <View style={style.page}>
                         <View style={style.container_cabecalho}>
                             <Image source={dima} style={style.foto} />
+                            <Text style={style.nome}>Edmar Santos</Text>
+                            <Text style={style.funcao}>Desenvolvedor Júnior</Text>
                         </View> 
                     </View>
            
@@ -28,9 +30,9 @@ export default function App(){
                 <Stack.Navigator initialRouteName="Home">
                         <Stack.Screen name="Home" component={Home}
                             options={{
-                                title: 'Bem-vindo ao  meu AppCurriculo',
+                                title: '    Bem-vindo ao  meu AppCurriculo',
                                 headerStyle:{
-                                    backgroundColor: '#121212'
+                                    backgroundColor: '#121212',
                                 },
                                 headerTintColor: '#FFF'
                             }} />
@@ -59,6 +61,15 @@ const style = StyleSheet.create({
         height: 150,
         borderRadius: 125
 
+    },
+    nome: {
+        fontSize: 26,
+        fontWeight: 'bold',
+        marginTop: 10
+    },
+    funcao: {
+        color: '#6495ED',
+        marginBottom: 10
     }
 })
 
