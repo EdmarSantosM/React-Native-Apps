@@ -10,6 +10,7 @@ export default function Home({navigation}){
             <Text></Text>
             <Button  title="Sobre" onPress={ () => navigation.navigate('Sobre')}/>
             <Text></Text>
+            <Button  title="Contato" onPress={ () => navigation.navigate('Contato')}/>
         </View>
     );
 }
