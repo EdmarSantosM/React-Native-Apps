@@ -1,5 +1,4 @@
-import React from 'react';
-import {StyleSheet, View, Image, Text } from 'react-native';
+
 
 import {NavigationContainer} from '@react-navigation/native';
 import {createStackNavigator} from '@react-navigation/stack';
@@ -7,29 +6,29 @@ import {createStackNavigator} from '@react-navigation/stack';
 
 import dima from './assets/dima.jpg';
 
-import Home from './src/pages/Home';
 import Sobre from './src/pages/Sobre';
-import Resumo from './src/pages/Resumo';
+
 
 const Stack = createStackNavigator();
 
 const App = () => {
     return (
         <>
+          <NavigationContainer>
+                     <Stack.Navigator>
+                        <Stack.Screen name="Sobre" component={Sobre} />
+                    </Stack.Navigator>
+                </NavigationContainer>
           <View style={style.page}>
+
+              {/*
                 <View style={style.container_cabecalho}>
                     <Image source={dima} style={style.dima} />
                     <Text style={style.nome}>Edmar Santos</Text>
                     <Text style={style.funcao}>Desenvolvedor Júnior</Text>
-
-                    <NavigationContainer>
-                        <Stack.Navigator>
-
-                        </Stack.Navigator>
-                    </NavigationContainer>
-
-                    
+              
                 </View>
+                */}
           </View>
         </>
     );
