@@ -25,6 +25,11 @@ export default function App(){
                             <Image source={dima} style={style.foto} />
                             <Text style={style.nome}>Edmar Santos</Text>
                             <Text style={style.funcao}>Desenvolvedor Júnior</Text>
+                      {/*    <View>
+                              <Text>Github <Icon name="github"  size={22} color={'#0000FF'} /></Text>
+                              <Text>Linkedin <Icon name="Linkedin"  size={22} color={'#0000FF'} /></Text>
+                              <Text>Facebook <Icon name="Facebook"  size={22} color={'#0000FF'} /></Text>
+                        </View>  */}
                         </View> 
                     </View>
            
@@ -43,10 +48,7 @@ export default function App(){
                         <Stack.Screen name="Contato" component={Contato} />
                 </Stack.Navigator>
                 </NavigationContainer>
-
-                    <View>
-                        <Icon name="github" />
-                    </View>
+                  
 
         </>
     );
@@ -75,6 +77,7 @@ const style = StyleSheet.create({
     },
     funcao: {
         color: '#6495ED',
+        fontWeight: 'bold',
         marginBottom: 10
     }
 })
