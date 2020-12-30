@@ -18,11 +18,11 @@ const Stack = createStackNavigator();
 export default function App(){
     return (
         <>
-                    <View>
+                    <View style={style.page}>
                         <Image source={dima} />
                     </View>
            
-                <NavigationContainer>
+                <NavigationContainer style={style.page}>
                 <Stack.Navigator initialRouteName="Home">
                         <Stack.Screen name="Home" component={Home}
                             options={{
@@ -41,5 +41,12 @@ export default function App(){
         </>
     );
 }
+
+const style = StyleSheet.create({
+    page: {
+        backgroundColor: '#E7E7E7',
+        flex: 1
+    }
+})
 
 
