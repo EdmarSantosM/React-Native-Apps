@@ -19,7 +19,9 @@ export default function App(){
     return (
         <>
                     <View style={style.page}>
-                        <Image source={dima} />
+                        <View style={style.container_cabecalho}>
+                            <Image source={dima} style={style.foto} />
+                        </View> 
                     </View>
            
                 <NavigationContainer style={style.page}>
@@ -46,6 +48,17 @@ const style = StyleSheet.create({
     page: {
         backgroundColor: '#E7E7E7',
         flex: 1
+    },
+    container_cabecalho: {
+        flex: 1,
+        alignItems: 'center',
+        justifyContent: 'center'
+    },
+    foto: {
+        width: 150,
+        height: 150,
+        borderRadius: 125
+
     }
 })
 
