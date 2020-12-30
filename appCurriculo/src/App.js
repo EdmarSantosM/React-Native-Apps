@@ -1,6 +1,7 @@
 import React from 'react';
 import {StyleSheet, View, Image, Text } from 'react-native';
-import {Github} from 'react-native-vector-icons/Feather'
+import Icon from 'react-native-vector-icons/Feather'
+
 
 import dima from './assets/dima.jpg';
 
@@ -13,8 +14,8 @@ const App = () => {
                     <Text style={style.nome}>Edmar Santos</Text>
                     <Text style={style.funcao}>Desenvolvedor Júnior</Text>
                     <View>
-                        <Icon name='github' size={12} color="#999" />
-                        <Icon name='github' />
+                         <Icon name="github"  size={30} color="#FFF"/>
+                         <Icon name="Linkedin" size={30} color="#FFF"/>
                     </View>
                 </View>
           </View>
