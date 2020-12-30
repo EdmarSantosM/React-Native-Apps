@@ -9,8 +9,12 @@ const App = () => {
           <View style={style.page}>
                 <View style={style.container_cabecalho}>
                     <Image source={dima} style={style.dima} />
-                    <Text>Edmar Santos</Text>
-                    <Text>Desenvolvedor Júnior</Text>
+                    <Text style={style.nome}>Edmar Santos</Text>
+                    <Text style={style.funcao}>Desenvolvedor Júnior</Text>
+                    <View>
+                        <Text>Github</Text>
+                        <Text>Linkedin</Text>
+                    </View>
                 </View>
           </View>
         </>
@@ -32,7 +36,18 @@ const style = StyleSheet.create({
         width: 150,
         height: 150,
         borderRadius:150
+    },
+    nome: {
+        fontSize: 26,
+        fontWeight: 'bold',
+        marginTop: 10
+    },
+    funcao: {
+        color: '#939393',
+        marginBottom: 10
+
     }
+
 
 
 })
