@@ -13,10 +13,19 @@ const App = () => {
                     <Image source={dima} style={style.dima} />
                     <Text style={style.nome}>Edmar Santos</Text>
                     <Text style={style.funcao}>Desenvolvedor Júnior</Text>
+                    
+                    {/*
+
                     <View>
                          <Icon name="github"  size={30} color="#FFF"/>
                          <Icon name="Linkedin" size={30} color="#FFF"/>
                     </View>
+
+                    */}
+
+                    
+
+                    
                 </View>
           </View>
         </>
