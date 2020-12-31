@@ -5,7 +5,6 @@ import { StyleSheet, View, Text, Image} from 'react-native';
 import{NavigationContainer} from '@react-navigation/native';
 import {createStackNavigator} from '@react-navigation/stack';
 
-import Icon from 'react-native-vector-icons/Feather'
 
 import Home from './pages/Home';
 import Resumo from './pages/Resumo';
@@ -70,7 +69,8 @@ const style = StyleSheet.create({
     },
     funcao: {
         color: '#6495ED',
-        marginBottom: 10
+        marginBottom: 10,
+        fontWeight: 'bold',
     }
 })
 
