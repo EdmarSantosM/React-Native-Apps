@@ -8,6 +8,8 @@ export default function Contato(){
              <Text style={style.texto}> Telefone: +55 11 9999-9999</Text>
              <TouchableOpacity>
                  <Text>GitHub</Text>
+             </TouchableOpacity>
+             <TouchableOpacity>
                  <Text>Linkedin</Text>
              </TouchableOpacity>
         </View>
